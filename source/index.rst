@@ -15,6 +15,8 @@ Contents
    :caption: Overview:
 
    introduction
+   install
+   tutorial
    .. getting_started
 
 Installing
