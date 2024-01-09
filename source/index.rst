@@ -7,7 +7,7 @@ Welcome to CABLEX's documentation!
 ==================================
 .. image:: _static/owtcable.jpg
    :alt: CABLEX
-   :width: 300px
+   :width: 400px
    :height: 300px
 
 
