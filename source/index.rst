@@ -41,6 +41,20 @@ Usage
    usage/advanced_features
 
 
+Installation
+============
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+Usage
+=====
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
 Indices and tables
 ==================
 
