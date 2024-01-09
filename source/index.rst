@@ -6,7 +6,6 @@
 Welcome to CABLEX's documentation!
 ==================================
 
-
 Contents
 --------
 
@@ -15,9 +14,6 @@ Contents
    :caption: Overview:
 
    introduction
-   install
-   tutorial
-   .. getting_started
 
 Installing
 ----------
@@ -26,9 +22,7 @@ Installing
    :maxdepth: 2
    :caption: Installation Guide:
 
-   .. installation/windows_install
-   installation/mac_install
-   installation/linux_install
+   install
 
 Usage
 -----
@@ -37,23 +31,7 @@ Usage
    :maxdepth: 2
    :caption: Usage Instructions:
 
-   .. usage/basic_usage
-   usage/advanced_features
-
-
-Installation
-============
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-Usage
-=====
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   tutorial
 
 Indices and tables
 ==================
