@@ -43,10 +43,10 @@ Installation
    installing
 
    .. toctree::
-   :maxdepth: 1
-   :caption: Installation CABLEX:
+      :maxdepth: 1
+      :caption: Installation CABLEX:
 
-   installing
+      installing
 
 
 Quick Start
