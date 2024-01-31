@@ -11,35 +11,44 @@ There are only two folders included in the software, i.e., bmp & data, where :fi
 necessary dependencies and documentation while :file:`data` usually save the simulation results after post-processing scripts. 
 All data files are named with :file:`Offsets_MarineGrowth_LoadingSpace_Cable_Buoy.txt`
 
+Offsets
+~~~~~~~
 The Offsets usually includes the following four scenarios which usually represents the offsets flexible during their real-life scenarios
 For the :file:`Norminal` One, it is applicable for both static and dynamic results, while the :file:`Near Far Cross` usually only appear 
 in the static analysis (LS1-LS3)
 
 .. code-block:: bash
+    :linenos:
     Nominal
     Far
     Near
     Cross
 
+Marine Growth
+~~~~~~~~~~~~~
 Marine growth refers to the accumulation of marine organisms on underwater structures, impacting submerged surfaces in aquatic environments, 
 which can alter the performance of flexible materials over time. In this case, :file:`SOL` and :file:`EOL` which represents scenarios under
 start of life and end of life.
+
 .. code-block:: bash
+    :linenos:
     SOL
     EOL
 
+Loading Space
+~~~~~~~~~~~~~
 LoadingSpace represents as follows:
 
-LS1: rough static check with wide range of Layback/TotalLength/Buoy
-LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1
-LS3: more detailed static check with offsets & current based on the pass cases from LS2 (SAG/HOG clearance 15% water depth)
-LS4: tether and clamp added with external checks to pass the entire config to dynamic analysis
-LS5: general dynamic check with specified time domain series for powercable fairleadpoint at ESS (50-y return period)\
-LS6: fatigue analysis with cyclic runs
+LS1: rough static check with wide range of Layback/TotalLength/Buoy  \n
+LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1 \n
+LS3: more detailed static check with offsets & current based on the pass cases from LS2 (SAG/HOG clearance 15% water depth) \n
+LS4: tether and clamp added with external checks to pass the entire config to dynamic analysis \n
+LS5: general dynamic check with specified time domain series for powercable fairleadpoint at ESS (50-y return period) \n
+LS6: fatigue analysis with cyclic runs \n
 
 
 +---------------------+---------------------------+
-|      Column 1       |        Column 2           |
+|         LS          |         Content           |
 +=====================+===========================+
 |   Loading Space 1   |     Static Nominal        |
 +---------------------+---------------------------+
@@ -54,6 +63,8 @@ LS6: fatigue analysis with cyclic runs
 |   Loading Space 6   |         Fatigue           |
 +---------------------+---------------------------+
 
+Canble/Buoy
+~~~~~~~~~~~
 Cable and Buoy usually represents which specified cable/buoy or even tether/clamp model is utlised in the simulations,
 for example, 300mm Cu or 800mm Cu 
 
