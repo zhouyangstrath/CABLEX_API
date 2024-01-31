@@ -11,10 +11,10 @@ Welcome to CABLEX's documentation!
    :Date: |today|
    :Author: Yang Zhou 
 
-CABLEX is an automation tool developed by the contractor at TFMC & University of Strathclyde. 
-It is specifically designed to design and optimise power cable configurations in FOWT projects. Seamlessly 
-integrating with TFMC established methodology, this software encompasses thousands of power cable base 
-configurations and includes design load cases in its routine. Noteworthy for its user-friendly interface, 
+CABLEX is an automated FOWT mooring line and power cable optimisation tool developed by the contractor at 
+TFMC & University of Strathclyde. It is specifically designed to design and optimise power cable configurations in 
+FOWT projects. Seamlessly integrating with TFMC established methodology, this software encompasses thousands of power 
+cable base configurations and includes design load cases in its routine. Noteworthy for its user-friendly interface, 
 CABLEX offers advanced static/dynamic analysis features and flexible criteria ranges, making it a convenient 
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
 Figure 1 illustrates the workflows for the tool, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
@@ -32,7 +32,6 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
    :caption: Introduction:
 
    introduction
-
 
 .. toctree::
    :maxdepth: 2
