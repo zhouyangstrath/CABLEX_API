@@ -5,12 +5,6 @@
 
 Welcome to CABLEX's documentation!
 ==================================
-.. image:: _static/owtcable.jpg
-   :alt: CABLEX
-   :width: 400px
-   :height: 300px
-
-
 .. only:: html
 
    :Version: v1.2.0
@@ -24,11 +18,27 @@ CABLEX offers advanced static/dynamic analysis features and flexible criteria ra
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
 Figure 1 illustrates the workflows for the tool, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
 
+.. image:: _static/owtcable.jpg
+   :alt: CABLEX
+   :width: 400px
+   :height: 300px
+
+
+
 .. image:: _static/workflow.jpg
    :alt: CABLEX
    :width: 400px
    :height: 300px
 
+
+**Documentation Directory**
+.. toctree::
+    :titlesonly:
+    :glob:
+
+    *
+
+    
 Contents
 --------
 
