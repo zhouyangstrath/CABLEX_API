@@ -50,7 +50,7 @@ Ensure that Python is installed on your system. It is recommended to use Python 
 
    python --version
 
-If not installed, download and install Python from the [official Python website](https://www.python.org/).
+If not installed, download and install Python from the (https://www.python.org/).
 
 **Dependency Installation:**
 
@@ -61,6 +61,5 @@ Install the required dependencies in the Python environment. Execute the followi
    pip install -r requirements.txt
 
 
-Now, you're ready to use CABLEX with generic version with full code access, you can either use python to 
+Now, it is ready to use CABLEX with generic version with full code access.
 
-For more detailed installation instructions and troubleshooting, refer to the Insllation Guide.

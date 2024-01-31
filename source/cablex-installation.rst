@@ -1,16 +1,63 @@
-CABLEX Installation
-===================
+Installation
+============
 
 To get started with using CABLEX, you have to be aware of the file structure of CABLEX and
-where to put you simulation data inside for pre/post-processing or visualsation.
+where to store you simulation data inside for pre/post-processing or visualsation.
 
 File Structure
 --------------
 
-There are only two folders included in the software, i.e., bmp & data, where bmp is usually to install all
-necessary dependencies and data usually save the simulation results after post-processing scripts. All data files 
-are named with :file:`Offsets_MarineGrowth_LoadingSpace_Cable_Buoy.txt`
+There are only two folders included in the software, i.e., bmp & data, where :file:`bmp` is usually to install all
+necessary dependencies and documentation while :file:`data` usually save the simulation results after post-processing scripts. 
+All data files are named with :file:`Offsets_MarineGrowth_LoadingSpace_Cable_Buoy.txt`
+
+The Offsets usually includes the following four scenarios which usually represents the offsets flexible during their real-life scenarios
+For the :file:`Norminal` One, it is applicable for both static and dynamic results, while the :file:`Near Far Cross` usually only appear 
+in the static analysis (LS1-LS3)
 
 .. code-block:: bash
-     Offsets_MarineGrowth_LoadingSpace_Cable_Buoy.txt
+    Nominal
+    Far
+    Near
+    Cross
 
+Marine growth refers to the accumulation of marine organisms on underwater structures, impacting submerged surfaces in aquatic environments, 
+which can alter the performance of flexible materials over time. In this case, :file:`SOL` and :file:`EOL` which represents scenarios under
+start of life and end of life.
+.. code-block:: bash
+    SOL
+    EOL
+
+LoadingSpace represents as follows:
+
+LS1: rough static check with wide range of Layback/TotalLength/Buoy
+LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1
+LS3: more detailed static check with offsets & current based on the pass cases from LS2 (SAG/HOG clearance 15% water depth)
+LS4: tether and clamp added with external checks to pass the entire config to dynamic analysis
+LS5: general dynamic check with specified time domain series for powercable fairleadpoint at ESS (50-y return period)\
+LS6: fatigue analysis with cyclic runs
+
+
++---------------------+---------------------------+
+|      Column 1       |        Column 2           |
++=====================+===========================+
+|   Loading Space 1   |     Static Nominal        |
++---------------------+---------------------------+
+|   Loading Space 2   |     Static Offsets        |
++---------------------+---------------------------+
+|   Loading Space 3   | Static Offsets & Currents |
++---------------------+---------------------------+
+|   Loading Space 4   |    Static Additional      |
++---------------------+---------------------------+
+|   Loading Space 5   |   Dynamic ESS & Directio  |
++---------------------+---------------------------+
+|   Loading Space 6   |         Fatigue           |
++---------------------+---------------------------+
+
+Cable and Buoy usually represents which specified cable/buoy or even tether/clamp model is utlised in the simulations,
+for example, 300mm Cu or 800mm Cu 
+
+Installation
+------------
+
+For Running the code, double click "CABLEX.exe", it may take 60s for the User Interface to open.
