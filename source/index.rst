@@ -33,35 +33,37 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
 
 **Documentation Directory**
 
-Contents
---------
-
-.. toctree::
-   :caption: Overview:
-
-   introduction
-
-Installing
+Installation
 ----------
 
 .. toctree::
    :maxdepth: 2
    :caption: Installation Guide:
 
-   install
+   installing
 
-Usage
+   .. toctree::
+   :maxdepth: 1
+   :caption: Installation CABLEX:
+
+   installing
+
+
+Quick Start
 -----
 
 .. toctree::
    :maxdepth: 2
-   :caption: Usage Instructions:
+   :caption: Quick Start:
 
    tutorial
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Key Features
+-----
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Key Features:
+
+   tutorial
