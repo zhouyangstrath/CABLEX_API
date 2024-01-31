@@ -10,9 +10,9 @@ Welcome to CABLEX's documentation!
    :Version: v1.2.0
    :Date: |today|
 
-CABLEX is an in-house automation tool developed by the CONTRACTOR at TFMC & University of Strathclyde. 
+CABLEX is an automation tool developed by the contractor at TFMC & University of Strathclyde. 
 It is specifically designed to design and optimise power cable configurations in FOWT projects. Seamlessly 
-integrating with TFMC established methodology, this software encompasses over 10,000 power cable base 
+integrating with TFMC established methodology, this software encompasses thousands of power cable base 
 configurations and includes design load cases in its routine. Noteworthy for its user-friendly interface, 
 CABLEX offers advanced static/dynamic analysis features and flexible criteria ranges, making it a convenient 
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
@@ -30,21 +30,11 @@ Installation
 
 .. toctree::
    :maxdepth: 2
-   :caption: : Download:
+   :caption: : Installation:
 
-   installing
-
-.. toctree::
-   :maxdepth: 2
-   :caption: CABLEX Installation:
-
-   installing
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Linked Libraries:
-
-   installing
+   download
+   cable-installation
+   linked-libraries
 
 
 Quick Start
@@ -54,45 +44,20 @@ Quick Start
    :maxdepth: 2
    :caption: Problem Statement:
 
-   tutorial
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Case Generation:
-
-   tutorial
-
-.. toctree::
-   :maxdepth: 2
-   :caption: CABLE Modelling:
-
-   tutorial
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Post-Processing:
-
-   tutorial
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Fitness Function(Optimisation):
-
-   tutorial
+   problem-statement
+   case-generation
+   cable-modelling
+   post-processing
+   fitness-function
 
 Interface Overview
 -----
 .. toctree::
    :maxdepth: 2
-   :caption: Basic Operations:
+   :caption: Interface Overview:
 
-   tutorial
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Plot Modules:
-
-   tutorial
+   basic-operation
+   plot-modules
 
 Key Features
 -----
@@ -101,6 +66,15 @@ Key Features
    :maxdepth: 2
    :caption: Key Features:
 
-   tutorial
+   key-features
+
+Contact
+-----
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contact:
+
+   contact
 
 
