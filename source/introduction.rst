@@ -1,5 +1,5 @@
-Introduction
-============
+Scope of CABLEX
+===============
 
 Dynamic Inter Array Cable (DIAC) is regarded as critical subsea transmission components for Floating Offshore Wind Turbine (FOWT) technologies, 
 therefore, the design requirements for the DIAC must be able to withstand extreme metocean environments and cyclic fatigue damage. For DIAC designs, 

@@ -27,17 +27,12 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
 
 **Documentation Directory**
 
-
-Introduction
-
 .. toctree::
    :maxdepth: 2
    :caption: Introduction:
 
    introduction
 
-Installation
-----------
 
 .. toctree::
    :maxdepth: 2
