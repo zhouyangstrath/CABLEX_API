@@ -23,14 +23,6 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
    :width: 400px
    :height: 300px
 
-
-
-.. image:: _static/workflow.jpg
-   :alt: CABLEX
-   :width: 400px
-   :height: 300px
-
-
 **Documentation Directory**
 
 Installation
@@ -38,15 +30,21 @@ Installation
 
 .. toctree::
    :maxdepth: 2
-   :caption: Installation Guide:
+   :caption: : Download:
 
    installing
 
-   .. toctree::
-      :maxdepth: 1
-      :caption: Installation CABLEX:
+.. toctree::
+   :maxdepth: 2
+   :caption: CABLEX Installation:
 
-      installing
+   installing
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Linked Libraries:
+
+   installing
 
 
 Quick Start
@@ -54,10 +52,47 @@ Quick Start
 
 .. toctree::
    :maxdepth: 2
-   :caption: Quick Start:
+   :caption: Problem Statement:
 
    tutorial
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Case Generation:
+
+   tutorial
+
+.. toctree::
+   :maxdepth: 2
+   :caption: CABLE Modelling:
+
+   tutorial
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Post-Processing:
+
+   tutorial
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Fitness Function(Optimisation):
+
+   tutorial
+
+Interface Overview
+-----
+.. toctree::
+   :maxdepth: 2
+   :caption: Basic Operations:
+
+   tutorial
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Plot Modules:
+
+   tutorial
 
 Key Features
 -----
@@ -67,3 +102,5 @@ Key Features
    :caption: Key Features:
 
    tutorial
+
+
