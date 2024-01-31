@@ -11,10 +11,23 @@ Welcome to CABLEX's documentation!
    :height: 300px
 
 
-CABLEX is an in-house automation tool developed by CONTRACTOR at TechnipFMC & University of Strathclyde, specifically designed for optimizing power cable configurations 
-in floating offshore wind projects based on the modelling in Orcaflex and OpenFAST. Integrating seamlessly with TECHNIPFMC's established methodology, this software encompasses 
-over 20,000 power cable base configurations and includes design load cases in its routine. A standout for its user-friendly interface, CABLEX offers advanced static/dynamic 
-analysis features, flexible criteria ranges, making it an indispensable tool for preliminary/detailed design checks and a pioneering solution in the renewable energy sector. 
+.. only:: html
+
+   :Version: v1.2.0
+   :Date: |today|
+
+CABLEX is an in-house automation tool developed by the CONTRACTOR at TFMC & University of Strathclyde. 
+It is specifically designed to design and optimise power cable configurations in FOWT projects. Seamlessly 
+integrating with TFMC established methodology, this software encompasses over 10,000 power cable base 
+configurations and includes design load cases in its routine. Noteworthy for its user-friendly interface, 
+CABLEX offers advanced static/dynamic analysis features and flexible criteria ranges, making it a convenient 
+tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
+Figure 1 illustrates the workflows for the tool, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
+
+.. image:: _static/workflow.jpg
+   :alt: CABLEX
+   :width: 400px
+   :height: 300px
 
 Contents
 --------
