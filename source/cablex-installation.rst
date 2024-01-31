@@ -39,12 +39,12 @@ Loading Space
 ~~~~~~~~~~~~~
 LoadingSpace represents as follows:
 
-LS1: rough static check with wide range of Layback/TotalLength/Buoy  \n
-LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1 \n
-LS3: more detailed static check with offsets & current based on the pass cases from LS2 (SAG/HOG clearance 15% water depth) \n
-LS4: tether and clamp added with external checks to pass the entire config to dynamic analysis \n
-LS5: general dynamic check with specified time domain series for powercable fairleadpoint at ESS (50-y return period) \n
-LS6: fatigue analysis with cyclic runs \n
+LS1: rough static check with wide range of Layback/TotalLength/Buoy  
+LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1 
+LS3: more detailed static check with offsets & current based on the pass cases from LS2 (SAG/HOG clearance 15% water depth) 
+LS4: tether and clamp added with external checks to pass the entire config to dynamic analysis
+LS5: general dynamic check with specified time domain series for powercable fairleadpoint at ESS (50-y return period) 
+LS6: fatigue analysis with cyclic runs 
 
 
 +---------------------+---------------------------+
