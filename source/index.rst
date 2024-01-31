@@ -9,6 +9,7 @@ Welcome to CABLEX's documentation!
 
    :Version: v1.2.0
    :Date: |today|
+   :Author: Yang Zhou 
 
 CABLEX is an automation tool developed by the contractor at TFMC & University of Strathclyde. 
 It is specifically designed to design and optimise power cable configurations in FOWT projects. Seamlessly 
@@ -22,6 +23,7 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
    :alt: CABLEX
    :width: 400px
    :height: 300px
+   :align: center
 
 **Documentation Directory**
 
@@ -30,7 +32,7 @@ Introduction
 
 .. toctree::
    :maxdepth: 2
-   :caption: Installation:
+   :caption: Introduction:
 
    introduction
 
@@ -42,7 +44,7 @@ Installation
    :caption: Installation:
 
    download
-   cable-installation
+   cablex-installation
    linked-libraries
 
 
