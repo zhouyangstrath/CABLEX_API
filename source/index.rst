@@ -17,7 +17,6 @@ FOWT projects. Seamlessly integrating with TFMC established methodology, this so
 cable base configurations and includes design load cases in its routine. Noteworthy for its user-friendly interface, 
 CABLEX offers advanced static/dynamic analysis features and flexible criteria ranges, making it a convenient 
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
-Figure 1 illustrates the workflows for the tool, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
 
 .. image:: _static/owtcable.jpg
    :alt: CABLEX

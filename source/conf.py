@@ -10,6 +10,8 @@ project = 'CABLEX'
 copyright = '2024, Yang Zhou'
 author = 'Yang Zhou'
 release = '1.2'
+html_logo = '_static/owtcable.jpg'
+
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

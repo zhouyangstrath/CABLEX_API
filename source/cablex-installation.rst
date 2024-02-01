@@ -50,23 +50,23 @@ LS6: fatigue analysis with cyclic runs
 +---------------------+---------------------------+
 |         LS          |         Content           |
 +=====================+===========================+
-|   Loading Space 1   |     LW Static Nominal        |
+|   Loading Space 1   |     LW Static Nominal     |
 +---------------------+---------------------------+
-|   Loading Space 2   |     LW Static Offsets        |
+|   Loading Space 2   |     LW Static Offsets     |
 +---------------------+---------------------------+
-|   Loading Space 3   | LW Static Offsets & Currents |
+|   Loading Space 3   | LW Static Offsets & Cur   |
 +---------------------+---------------------------+
-|   Loading Space 4   |   PW/RPW Static Additional      |
+|   Loading Space 4   |   PW/RPW Static Add       |
 +---------------------+---------------------------+
-|   Loading Space 5   |  PW/RPW Dynamic ESS & Directio  |
+|   Loading Space 5   |  PW/RPW Dynamic ESS & Dir |
 +---------------------+---------------------------+
-|   Loading Space 6   |      PW/RPW   Fatigue           |
+|   Loading Space 6   |      PW/RPW Fatigue       |
 +---------------------+---------------------------+
 
 Canble/Buoy
 ~~~~~~~~~~~
 Cable and Buoy usually represents which specified cable/buoy or even tether/clamp model is utlised in the simulations,
-for example, :file:`300mm Cu` or :file:`800mm Cu` 
+for example, :file:`300mm Al` or :file:`800mm Cu` 
 
 Installation
 ------------
