@@ -10,6 +10,9 @@ metocean data. The work flow of CABLEX is shown as follows, which is initiated f
    :height: 233px
    :align: center
 
+Analysis Process
+----------------
+
 Typically, seven stages are presented to assist us in achieving a better configuration. It begins with documentation of client/TFMC engineers' specifications, 
 On the client side, including site conditions, RNA and floater geometries, gross properties, metocean data, and client specifications. TFMC engineers will 
 also be provided with information on buoy, cable, clamp, bend stiffener types, along with installation cost requirements.
@@ -42,3 +45,7 @@ of the **Design Space** or **DS**, which is represented by several parameters. F
     Buoy:  Buoy Uplift Force
     Buoy_CC:  Buoy to Buoy Center to Centre Distance
     1st Buoy: Clamp/Hang-off position to 1st Buoy Distance
+
+
+Methodology
+-----------

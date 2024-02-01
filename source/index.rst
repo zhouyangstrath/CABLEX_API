@@ -41,25 +41,21 @@ Documentation Directory
    cablex-installation
    linked-libraries
 
-
-Quick Start
------
-
 .. toctree::
    :maxdepth: 2
-   :caption: Problem Statement:
+   :caption: Methodology:
 
    problem-statement
    case-generation
    cable-modelling
+   simulation
    post-processing
+   visualisation
    fitness-function
 
-Interface Overview
------
 .. toctree::
    :maxdepth: 2
-   :caption: Interface Overview:
+   :caption: Quick Start:
 
    basic-operation
    plot-modules
@@ -80,6 +76,6 @@ Contact
    :maxdepth: 2
    :caption: Contact:
 
-   contact
+   
 
 

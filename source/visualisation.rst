@@ -1,4 +1,4 @@
-Plot Modules
-============
+visualisation
+=============
 
 This is the test of tutoirials
