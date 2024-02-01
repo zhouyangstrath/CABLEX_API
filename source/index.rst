@@ -18,7 +18,7 @@ cable base configurations and includes design load cases in its routine. Notewor
 CABLEX offers advanced static/dynamic analysis features and flexible criteria ranges, making it a convenient 
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
 
-.. image:: _static/owtcable.jpg
+.. image:: _static/owtcable1.jpg
    :alt: CABLEX
    :width: 400px
    :height: 300px
@@ -69,6 +69,8 @@ Documentation Directory
 .. toctree::
    :maxdepth: 2
    :caption: Contact:
+
+   contact
 
    
 
