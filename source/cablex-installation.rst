@@ -17,8 +17,7 @@ The Offsets usually includes the following four scenarios which usually represen
 For the :file:`Norminal` One, it is applicable for both static and dynamic results, while the :file:`Near Far Cross` usually only appear 
 in the static analysis (LS1-LS3)
 
-.. code-block:: text
-    :linenos:
+::
     Nominal
     Far
     Near
@@ -30,8 +29,7 @@ Marine growth refers to the accumulation of marine organisms on underwater struc
 which can alter the performance of flexible materials over time. In this case, :file:`SOL` and :file:`EOL` which represents scenarios under
 start of life and end of life.
 
-.. code-block:: text
-    :linenos:
+::
     SOL
     EOL
 

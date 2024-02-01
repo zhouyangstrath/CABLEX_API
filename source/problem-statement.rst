@@ -2,7 +2,7 @@ Problem Statement
 =================
 
 To examine the best cable configuration from a given clinets specifications, or the knowledgebase under the provided sites
-metocean data. The work flow of CABLEX is shown as follows.
+metocean data. The work flow of CABLEX is shown as follows, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
 
 .. image:: _static/workflow.png
    :alt: workflow
@@ -30,7 +30,15 @@ also be provided with information on buoy, cable, clamp, bend stiffener types, a
     LayBack      
 
 
-Genseveral loading space 
 
-Figure 1 illustrates the workflows for the tool, which is initiated from Client/TFMC inputs and returns with an optimized configuration.
+The following figure presents a simplified Lazy Wave Shape Power Cable from (LS1-LS3). 
+It is typically considered in the initial stages to establish an optimized configuration, 
+laying a solid foundation for subsequent modeling and optimization. The current methodology introduces the concept 
+of the **Design Space** or **DS**, which is represented by several parameters. For a Lazy Wave Shape, five parameters are introduced, as shown below:
 
+::
+    LayBack: LayBack
+    Total Length: LW Power Cable Total Length
+    Buoy:  Buoy Uplift Force
+    Buoy_CC:  Buoy to Buoy Center to Centre Distance
+    1st Buoy: Clamp/Hang-off position to 1st Buoy Distance
