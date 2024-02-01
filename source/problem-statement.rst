@@ -40,6 +40,7 @@ laying a solid foundation for subsequent modeling and optimization. The current 
 of the **Design Space** or **DS**, which is represented by several parameters. For a Lazy Wave Shape, five parameters are introduced, as shown below:
 
 ::
+
     LayBack: LayBack
     Total Length: LW Power Cable Total Length
     Buoy:  Buoy Uplift Force
@@ -49,3 +50,8 @@ of the **Design Space** or **DS**, which is represented by several parameters. F
 
 Methodology
 -----------
+.. image:: _static/workflow.png
+   :alt: workflow
+   :width: 900px
+   :height: 765px
+   :align: center

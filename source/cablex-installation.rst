@@ -18,6 +18,7 @@ For the :file:`Norminal` One, it is applicable for both static and dynamic resul
 in the static analysis (LS1-LS3)
 
 ::
+
     Nominal
     Far
     Near
@@ -30,8 +31,10 @@ which can alter the performance of flexible materials over time. In this case, :
 start of life and end of life.
 
 ::
+
     SOL
     EOL
+
 
 Loading Space
 ~~~~~~~~~~~~~
