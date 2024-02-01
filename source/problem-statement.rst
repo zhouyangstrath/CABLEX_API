@@ -50,7 +50,7 @@ of the **Design Space** or **DS**, which is represented by several parameters. F
 
 Methodology
 -----------
-.. image:: _static/workflow.png
+.. image:: _static/workflow2.png
    :alt: workflow
    :width: 900px
    :height: 765px
