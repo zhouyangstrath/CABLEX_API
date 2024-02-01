@@ -25,7 +25,8 @@ Figure 1 illustrates the workflows for the tool, which is initiated from Client/
    :height: 300px
    :align: center
 
-**Documentation Directory**
+Documentation Directory
+=======================
 
 .. toctree::
    :maxdepth: 2

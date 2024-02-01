@@ -17,7 +17,7 @@ The Offsets usually includes the following four scenarios which usually represen
 For the :file:`Norminal` One, it is applicable for both static and dynamic results, while the :file:`Near Far Cross` usually only appear 
 in the static analysis (LS1-LS3)
 
-.. code-block:: bash
+.. code-block:: text
     :linenos:
     Nominal
     Far
@@ -30,14 +30,14 @@ Marine growth refers to the accumulation of marine organisms on underwater struc
 which can alter the performance of flexible materials over time. In this case, :file:`SOL` and :file:`EOL` which represents scenarios under
 start of life and end of life.
 
-.. code-block:: bash
+.. code-block:: text
     :linenos:
     SOL
     EOL
 
 Loading Space
 ~~~~~~~~~~~~~
-LoadingSpace represents as follows:
+Loading Space refers as follows:
 
 LS1: rough static check with wide range of Layback/TotalLength/Buoy  
 LS2: detailed static check with offsets based on finer configurations obtained from the pass cases(not taut and SAG/HOG not touching SB/SWL) from LS1 
@@ -50,23 +50,23 @@ LS6: fatigue analysis with cyclic runs
 +---------------------+---------------------------+
 |         LS          |         Content           |
 +=====================+===========================+
-|   Loading Space 1   |     Static Nominal        |
+|   Loading Space 1   |     LW Static Nominal        |
 +---------------------+---------------------------+
-|   Loading Space 2   |     Static Offsets        |
+|   Loading Space 2   |     LW Static Offsets        |
 +---------------------+---------------------------+
-|   Loading Space 3   | Static Offsets & Currents |
+|   Loading Space 3   | LW Static Offsets & Currents |
 +---------------------+---------------------------+
-|   Loading Space 4   |    Static Additional      |
+|   Loading Space 4   |   PW/RPW Static Additional      |
 +---------------------+---------------------------+
-|   Loading Space 5   |   Dynamic ESS & Directio  |
+|   Loading Space 5   |  PW/RPW Dynamic ESS & Directio  |
 +---------------------+---------------------------+
-|   Loading Space 6   |         Fatigue           |
+|   Loading Space 6   |      PW/RPW   Fatigue           |
 +---------------------+---------------------------+
 
 Canble/Buoy
 ~~~~~~~~~~~
 Cable and Buoy usually represents which specified cable/buoy or even tether/clamp model is utlised in the simulations,
-for example, 300mm Cu or 800mm Cu 
+for example, :file:`300mm Cu` or :file:`800mm Cu` 
 
 Installation
 ------------

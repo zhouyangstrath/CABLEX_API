@@ -1,7 +1,7 @@
 Downloads
 =========
 
-To get started with CABLEX, you can download the latest version using the following commands:
+To get started with CABLEX, you can download the latest version using the following two ways:
 
 Software Downloads
 ------------------
@@ -10,7 +10,7 @@ The code is compiled to the executables after each release to aid engineers opti
 can be downloaded via:
 
 .. code-block:: bash
-    L:\18 NEV\Floating Offshore Wind\05 Software\CABLEX
+   cd L:\18 NEV\Floating Offshore Wind\05 Software\CABLEX
 
 
 Using Git
