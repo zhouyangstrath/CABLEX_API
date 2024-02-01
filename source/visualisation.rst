@@ -4,7 +4,7 @@ Visualisation
 The bottom Figure presents the User Interface of the CABLEX which may aid the users understand 
 what is going on with various of power cable designs.
 
-.. image:: _static/ui1.jpg
+.. image:: _static/userinterface.jpg
    :alt: User Interface
    :width: 600px
    :height: 300px
