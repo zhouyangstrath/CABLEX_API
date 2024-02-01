@@ -56,3 +56,5 @@ Methodology
    :width: 750px
    :height: 565px
    :align: center
+
+Figure present the methodology of CABLEX

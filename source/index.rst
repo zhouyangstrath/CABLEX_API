@@ -19,9 +19,9 @@ CABLEX offers advanced static/dynamic analysis features and flexible criteria ra
 tool for preliminary and detailed design checks. It stands out as a pioneering solution in the renewable energy sector. 
 
 .. image:: _static/owtcable1.jpg
-   :alt: CABLEX
+   :alt: CABLE sketch
    :width: 400px
-   :height: 300px
+   :height: 21px
    :align: center
 
 Documentation Directory
