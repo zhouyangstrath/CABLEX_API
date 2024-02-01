@@ -53,6 +53,6 @@ Methodology
 -----------
 .. image:: _static/workflow2.png
    :alt: workflow
-   :width: 800px
-   :height: 665px
+   :width: 750px
+   :height: 565px
    :align: center

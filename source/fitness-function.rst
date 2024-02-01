@@ -9,9 +9,11 @@ with
 
 FF = Tmax/MBL + Cmax/MAC + Pt/Nor
 
-• MBL = Minimum Breaking Load
-• MAC = Maximum Allowable Curvature
-• Nor = Specified tether properties
+::
+    
+    • MBL = Minimum Breaking Load
+    • MAC = Maximum Allowable Curvature
+    • Nor = Specified tether properties
 
 both including a safety factor of 1.3. Using the fitness
 function, an Power Cable confguration with lower ftness value
@@ -20,4 +22,5 @@ a parametric study, with the ftness value being the central
 decision criterion.
 
 [1] Rentschler, M. U., Adam, F., Chainho, P., Krügel, K., & Vicente, P. C. (2020). Parametric study of dynamic inter-array cable systems for floating offshore wind turbines. Marine Systems & Ocean Technology, 15, 16-25.
+
 [2] Ahmad, I. B., Schnepf, A., & Ong, M. C. (2023). An optimisation methodology for suspended inter-array power cable configurations between two floating offshore wind turbines. Ocean Engineering, 278, 114406.

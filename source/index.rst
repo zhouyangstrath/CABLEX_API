@@ -58,10 +58,6 @@ Documentation Directory
    :caption: Quick Start:
 
    basic-operation
-   plot-modules
-
-Key Features
------
 
 .. toctree::
    :maxdepth: 2
@@ -69,8 +65,6 @@ Key Features
 
    key-features
 
-Contact
------
 
 .. toctree::
    :maxdepth: 2

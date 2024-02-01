@@ -28,8 +28,3 @@ Once the input files are available, the base model is established following thes
 5. **Client Specifications**: Ensure that the model adheres to all client specifications.
 6. **Cable Buoy Clamp Tether BS selection** Implement the properties of selection in a specified file
 
-The scripts can be accessed by 
-
-.. code-block:: bash
-
-   cd UK-FDT-Tools\PowerCable\CABLEX\CaseGen
