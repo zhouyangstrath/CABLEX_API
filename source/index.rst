@@ -20,7 +20,7 @@ tool for preliminary and detailed design checks. It stands out as a pioneering s
 
 .. image:: _static/owtcable1.jpg
    :alt: CABLE sketch
-   :width: 300px
+   :width: 280px
    :height: 210px
    :align: center
 
