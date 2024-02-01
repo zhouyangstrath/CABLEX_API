@@ -28,9 +28,7 @@ Once you have cloned the repository, navigate to the project directory:
 
 .. code-block:: bash
 
-   cd UK-FDT-Tools
-   cd PowerCable
-   cd CABLEX
+   cd UK-FDT-Tools/PowerCable/CABLEX
 
 System Requirements
 -------------------
