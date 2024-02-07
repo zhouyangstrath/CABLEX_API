@@ -7,14 +7,23 @@ case settings is shown as follows:
 Loading Space 1
 ---------------
 
+The aim of LS1 is to find out the basic pass zone for lazy wave configurations under norminal conditions.
+
+::
+
+    Static
+    Nominal 
+    No offsets
+    No current
+
 You have to create the base model based on the client/TFMC engineers specifications, the base model 
 for testing is based on the 800mm Copper Cable and 1000kg Buoy, Detailed info is shown as follows,
 
 ::
 
     Power cable property 	 	        800mm2 Cu
-    Outside diameter [mm]		        187.6(SOL)       287.6 (EOL)
-    Mass in air [kg/m]		            47.68(SOL)       97.13 (EOL)
+    Outside diameter [mm]		    187.6(SOL)       287.6 (EOL)
+    Mass in air [kg/m]		        47.68(SOL)       97.13 (EOL)
     Weight in sea water [N/m]	        439.4(SOL)        NA (EOL)
 
     Buoy property
@@ -49,6 +58,29 @@ to do the case iteration/multiply work for Nominal Position with SOL/EOL Propert
 .. code-block:: bash
 
     python pc_conf_LS1.py
+
+
+The case will be generated automatically with screen showing what layback is manipulating now. The scripts will be ending with the infomation 
+for all generated cases, for **Length Failed** case, refers to the total length is smaller than the minimum line length at given laybacks while 
+**Buoy_L Failed** ones referst to the buoy length is large than 2/3 of the total length which is not acceptable for Power Cable Design.
+
+::
+
+    End of the batch
+    Total number of models created:  4664
+    Total number of successful models created:  9328
+    Total number of Length Failed models:  2182
+    Total number of Buoy_L Failed models:  294
+    Time :  2024-02-05 11:39:28.744989
+    Elapsed time : 579.515625 0.421875
+    Total elapsed time: 579.09375 [s]
+
+For Simulations, generally, loaded all the **.yml** file in the Orcaflex batch processing for static analysis, click skip dynamics,
+then you have to download the **post_calculation_CABLEX.py** in the **CodeSource** for post calculation process needed during Orcaflex 
+batch simulations.
+
+Simply Press Run
+
 
 
 Testrun1(STATIC PASS): Select LS1/LS2 with default cable configs, 

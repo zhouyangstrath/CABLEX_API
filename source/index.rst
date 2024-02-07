@@ -65,6 +65,12 @@ Documentation Directory
 
    key-features
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Release Notes:
+
+   release-note
+
 
 .. toctree::
    :maxdepth: 2
