@@ -30,12 +30,12 @@ For a lazywave shape, the following Design Space Parameters is considered,
 
 
 1. **BASE MODEL CREATION:** Create the base model based on the client/TFMC engineers specifications, the base model 
-for testing is based on the 800mm Copper Cable and 1000kg Buoy as a shown case, Detailed info presented as follows,
+for the show case is based on the 800mm Copper Cable and 1000kg Buoy as a shown case, Detailed info presented as follows,
 
 ::
 
     Power cable property 	 	        800mm2 Cu
-    Outside diameter [mm]		    187.6(SOL)       287.6 (EOL)
+    Outside diameter [mm]		 187.6(SOL)       287.6 (EOL)
     Mass in air [kg/m]		        47.68(SOL)       97.13 (EOL)
     Weight in sea water [N/m]	        439.4(SOL)        NA (EOL)
 
@@ -77,11 +77,32 @@ also be saved into data.txt file, For Example
 
 You now got all the simulation files with **DS1 & LS1** 
 
-For Simulations, generally, loaded all the **.yml** file in the Orcaflex batch processing for static analysis, click skip dynamics,
-then you have to download the **post_calculation_CABLEX.py** in the **CodeSource** for post calculation process needed during Orcaflex 
-batch simulations.
+3. **SIMULTAIONS & POST PROCESSING**: download the **post_calculation_CABLEX_LW.py** from the aforementioned path, copy the file to the same directory where the case file generated.
+Open **Orcaflex** batch processing reload all the case file and simulate the case, the post-processing results will be automatically shown as soon as the static simulation is finalised.
 
-Simply Press Run
+Run **dataSum_static.py** to summarise all the data file used for visualisation in CABLEX UI, you will get two seperate files with all data,
+
+::
+
+    Nominal_SOL_LS1.txt
+    Nominal_EOL_LS1.txt
+
+
+4. **VISUALISATION**: Transfer the results file from LS1 to the **CABLEX.exe** located directory, ususally the data is saved under the following path for the show case
+
+.. code-block:: bash
+    cd ./Pentlandstatics
+
+double click **CABLEX.exe**, you will be able to see the knowledge and data base based on the LS1 site conditions
+
+5. **SPECIFY PASS CASE**: Click **export pass case** button at CABLEX UI and saved it to the directory for LS2 simulations, make sure the file name is **allpass.txt**, 
+a screenshot of the pass cases is shown as follows,
+
+.. image:: _static/passcaseLS1.jpg
+   :alt: passcaseLS1
+   :width: 280px
+   :height: 240px
+   :align: center
 
 
 
