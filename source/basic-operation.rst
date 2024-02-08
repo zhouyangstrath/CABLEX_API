@@ -9,6 +9,12 @@ Loading Space 1
 
 The aim of LS1 is to find out the basic green zone for lazywave configurations design with no offsets(Norminal),
 
+.. image:: _static/LS1.PNG
+   :alt: passcaseLS2
+   :width: 400px
+   :height: 280px
+   :align: center
+
 **Details of LS1**
 ::
 
@@ -193,8 +199,7 @@ For a lazywave shape at LS3, the following Design Space Parameters is considered
 
 1. **BASE MODEL CREATION**: The Base model for LS3 & DS3 is identical with previous stage **LW_800mm_ESOL.yml**
 
-2. **MODEL ITERATION**: Download the **pc_conf_LS3.py** and achieve case iteration/multiply work 
-for Nominal Position with SOL/EOL Properties.
+2. **MODEL ITERATION**: Download the **pc_conf_LS3.py** and achieve case iteration/multiply work.
 
 .. code-block:: bash
 
@@ -221,6 +226,12 @@ double click **CABLEX.exe**, you will be able to see the knowledge and data base
 a screenshot of the pass cases is shown as follows, the **Passed** Configuration is based on different offset and current results. Only the configuration withstand all the 
 offset and current can diliver to the next stage.
 
+.. image:: _static/passcaseLS3.jpg
+   :alt: passcaseLS2
+   :width: 380px
+   :height: 330px
+   :align: center
+
 6. **NOTES**: Since LS4 is making a RPW cable configuration based on the LS3 pass results, therefore only very few configuration can be passed to the next stage, those cases 
 are selected based on the **fitness factor** (calculated based on curvature, tension, buoy length, total length, hog clear etc). As a show case, only the best configuration considered
 to pass to the next step:
@@ -234,7 +245,14 @@ Loading Space 4
 
 The aim of LS4 is to switch from a Lazywave configuraiton to real design RPW cable configuration (Reverse-Plaint Wave configuraiton) with the introduction of 
 **Tether Clamp & Lower Catenary**, the current and offsets is also introduced in the process, offsets is set as 30% of water depth, while the current refers
-as 50-y return period current speed
+as 50-y return period current speed, 
+
+.. image:: _static/LS4.PNG
+   :alt: LS4
+   :width: 600px
+   :height: 230px
+   :align: center
+
 
 **Details of LS4**
 ::
@@ -245,10 +263,89 @@ as 50-y return period current speed
     Near/Far/Cross offsets
     Current 
 
-For a RPW, the following Design Space Parameters is considered,
+All RPW configuration(2nd Loop) is set up based on the previous lazywave configruation which fit the best scope of the clients need. Therefore, new parameters
+are introduced to model the updated power cable system. The details of DS4 parameters is set as follows.
 
-**Details of DS3**
+**Details of DS4**
 ::
 
-    Pass cases from DS2 & LS2
+    LazyWave few Pass cases from DS3 & LS3
+    Tether Anchor : 131m: 134m: 1m
+    Tether Length : 8m: 13m: 1m
+    Lower Catenary Anchor: 285m
+    Lower Catenary Length: 145:155m:1m
 
+1. **BASE MODEL CREATION**: An updated base model should be set up manually, i.e., **LW_800mm_ESOL_RPW.yml**  get it from,
+
+.. code-block:: bash
+
+   cd NEV\Floating Offshore Wind\05 Software\CABLEX\CodeSource
+
+2. **MODEL ITERATION**: Download the **pc_conf_LS4.py** and achieve case iteration/multiply work 
+
+.. code-block:: bash
+
+    python pc_conf_LS4.py
+
+Nominal Near Far Cross four folder will be created in LS4
+
+3. **SIMULTAIONS & POST PROCESSING**: Put all case dat files in Orcaflex batch processing and make sure **post_calculation_CABLEX_RPW.py** is in every
+directory, Run **dataSum_static.py** to summarise all the data file used for visualisation in CABLEX UI, you will get eight seperate files with all data,
+
+::
+
+    Nominal_SOL_LS4.txt
+    Nominal_EOL_LS4.txt
+    Near_SOL_LS4.txt
+    Near_EOL_LS4.txt
+    Far_SOL_LS4.txt
+    Far_EOL_LS4.txt
+    Cross_SOL_LS4.txt
+    Cross_EOL_LS4.txt
+
+
+4. **VISUALISATION**:  Need to updated the UI for DS4 & LS4 visualisation (SKIPPING)
+
+5. **SPECIFY PASS CASE**: Similiar with LS3, fitness function is utlised to select the case with best performance form the previous loading space to the 
+following one, i.e., the case with the lowest fitness factor is selected to run the full dynamic analysis together with tetrasub platfrom.
+
+Loading Space 5
+---------------
+
+The aim of LS5 is to run full dynamic analysis with the client specified FOWT motion data with 12 conditions (wind/wave/current combination), similarly the model 
+is to switch from a Lazywave configuraiton to real design RPW cable configuration (Reverse-Plaint Wave configuraiton) with the introduction of 
+**Tether Clamp & Lower Catenary**, the current and offsets is also introduced in the process, offsets is set as 30% of water depth, while the current refers
+as 50-y return period current speed, 
+
+.. image:: _static/LS5.PNG
+   :alt: LS51
+   :width: 700px
+   :height: 150px
+   :align: center
+
+.. image:: _static/LS5_2.PNG
+   :alt: LS52
+   :width: 700px
+   :height: 545px
+   :align: center
+
+**Details of LS4**
+::
+
+    Reverse-Plaint Wave
+    Static
+    Nominal  
+    Near/Far/Cross offsets
+    Current 
+
+All RPW configuration(2nd Loop) is set up based on the previous lazywave configruation which fit the best scope of the clients need. Therefore, new parameters
+are introduced to model the updated power cable system. The details of DS4 parameters is set as follows.
+
+**Details of DS4**
+::
+
+    LazyWave few Pass cases from DS3 & LS3
+    Tether Anchor : 131m: 134m: 1m
+    Tether Length : 8m: 13m: 1m
+    Lower Catenary Anchor: 285m
+    Lower Catenary Length: 145:155m:1m
