@@ -1,5 +1,5 @@
-Basic Operation
-===============
+Test Run (Tutorial 1)
+=====================
 
 Here is a show case for how the workflow of CABLEX looks like and the detailed explanation and 
 case settings is shown as follows:
@@ -12,6 +12,7 @@ The aim of LS1 is to find out the basic green zone for lazywave configurations d
 **Details of LS1**
 ::
 
+    LazyWave
     Static
     Nominal 
     No offsets
@@ -100,24 +101,70 @@ a screenshot of the pass cases is shown as follows,
 
 .. image:: _static/passcaseLS1.jpg
    :alt: passcaseLS1
-   :width: 280px
-   :height: 240px
+   :width: 380px
+   :height: 330px
    :align: center
 
+The Pass Case basic filter is SAG/HOG is set as 10% clearance with SB and SWL. Now you have all the lazywave configuration prepared for the LS2 simulations. 
+
+Loading Space 2
+---------------
+
+The aim of LS2 is to find out the refined green zone for lazywave configurations design with offsets(N/F/C), the offsets is set as 30% of water depth,
+
+**Details of LS2**
+::
+
+    LazyWave
+    Static
+    Nominal  
+    Near/Far/Cross offsets
+    No current
+
+For a lazywave shape, the following Design Space Parameters is considered,
+
+**Details of DS2**
+::
+
+    Pass cases from DS1 & LS1
+
+1. **BASE MODEL CREATION**: The Base model for LS2 & DS2 is identical with previous stage **LW_800mm_ESOL.yml**
+
+2. **MODEL ITERATION**: Download the **pc_conf_LS2.py** and achieve case iteration/multiply work 
+for Nominal Position with SOL/EOL Properties.
+
+.. code-block:: bash
+
+    python pc_conf_LS2.py
+
+Different with LS1, you will have four different folders once you created the models, i.e., Nominal Near Far Cross
+
+3. **SIMULTAIONS & POST PROCESSING**: Put all case dat files in Orcaflex batch processing and make sure **post_calculation_CABLEX_LW.py** is in every
+directory, Run **dataSum_static.py** to summarise all the data file used for visualisation in CABLEX UI, you will get eight seperate files with all data,
+
+::
+
+    Nominal_SOL_LS2.txt
+    Nominal_EOL_LS2.txt
+    Near_SOL_LS2.txt
+    Near_EOL_LS2.txt
+    Far_SOL_LS2.txt
+    Far_EOL_LS2.txt
+    Cross_SOL_LS2.txt
+    Cross_EOL_LS2.txt
 
 
-Testrun1(STATIC PASS): Select LS1/LS2 with default cable configs, 
-select Click "Pass Plot Static" to shown the power cable configuration 
-info (pass(green tick): not taut, not touching SB/SWL); Tick your checks 
-you wish to add on and enter the value you wish to add, i.e., sag/hog clearance 
+4. **VISUALISATION**: Transfer the results file from LS2 to the **CABLEX.exe** located directory, ususally the data is saved under the following path for the show case
+double click **CABLEX.exe**, you will be able to see the knowledge and data base based on the LS2 & DS2
 
-Testrun2(DYNAMIC PASSS): Select LS4 with default cable configs, select 
-Click "Pass Plot Dynamic" to shown the pass configuration(should all pass); 
-Tick your checks you wish to add on and enter the value you wish to add, 
-i.e., sag/hog clearance and see the updates of pass cases 
+5. **SPECIFY PASS CASE**: Click **export pass case** button at CABLEX UI and saved it to the directory for LS3 simulations, make sure the file name is **allpass.txt**, 
+a screenshot of the pass cases is shown as follows,
 
-Testrun3(CONTOUR PLOTS): Select either LS1/LS2/LS3/L4, chose the params 
-you wish to plot at Contours section, Click "Contour Plot" to shown the results
+.. image:: _static/passcaseLS2.jpg
+   :alt: passcaseLS2
+   :width: 380px
+   :height: 330px
+   :align: center
 
-
-More info needed in this page with v1.4 release with engineers friendly interface
+The refined Configuration is based on different offset results which a refined pass case. 
+Ready to pass to LS3 now.
