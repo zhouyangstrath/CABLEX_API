@@ -313,9 +313,7 @@ Loading Space 5
 ---------------
 
 The aim of LS5 is to run full dynamic analysis with the client specified FOWT motion data with 12 conditions (wind/wave/current combination), similarly the model 
-is to switch from a Lazywave configuraiton to real design RPW cable configuration (Reverse-Plaint Wave configuraiton) with the introduction of 
-**Tether Clamp & Lower Catenary**, the current and offsets is also introduced in the process, offsets is set as 30% of water depth, while the current refers
-as 50-y return period current speed, 
+is to introduce a RPW cable configuration together with the floater and test it with client provided time series data. 
 
 .. image:: _static/LS5.PNG
    :alt: LS51
@@ -325,27 +323,46 @@ as 50-y return period current speed,
 
 .. image:: _static/LS5_2.PNG
    :alt: LS52
-   :width: 700px
-   :height: 545px
+   :width: 500px
+   :height: 390px
    :align: center
 
-**Details of LS4**
+**Details of LS5**
 ::
 
-    Reverse-Plaint Wave
-    Static
-    Nominal  
-    Near/Far/Cross offsets
-    Current 
+    Reverse-Plaint Wave with  Floater
+    Dynamic
+    Time series motion data (wave/wind/current misalignment)
 
 All RPW configuration(2nd Loop) is set up based on the previous lazywave configruation which fit the best scope of the clients need. Therefore, new parameters
 are introduced to model the updated power cable system. The details of DS4 parameters is set as follows.
 
-**Details of DS4**
+**Details of DS5**
 ::
 
-    LazyWave few Pass cases from DS3 & LS3
-    Tether Anchor : 131m: 134m: 1m
-    Tether Length : 8m: 13m: 1m
-    Lower Catenary Anchor: 285m
-    Lower Catenary Length: 145:155m:1m
+    DS1-DS4 parameters
+    RPW layouts
+
+1. **BASE MODEL CREATION**: 
+
+2. **MODEL ITERATION**: 
+
+3. **SIMULTAIONS & POST PROCESSING**: Put all case dat files in Orcaflex batch processing and make sure **post_calculation_CABLEX_dynamic_RPW.py** is in every
+directory, Run **dataSum_static.py** to summarise all the data file used for visualisation in CABLEX UI, you will get eight seperate files with all data,
+
+::
+
+    Nominal_SOL_LS5.txt
+    Nominal_EOL_LS5.txt
+    Near_SOL_LS5.txt
+    Near_EOL_LS5.txt
+    Far_SOL_LS5.txt
+    Far_EOL_LS5.txt
+    Cross_SOL_LS5.txt
+    Cross_EOL_LS5.txt
+
+
+4. **VISUALISATION**:  
+
+5. **SPECIFY PASS CASE**: 
+
