@@ -36,7 +36,7 @@ for the show case is based on the 800mm Copper Cable and 1000kg Buoy as a shown 
 ::
 
     Power cable property 	 	        800mm2 Cu
-    Outside diameter [mm]		 187.6(SOL)       287.6 (EOL)
+    Outside diameter [mm]		187.6(SOL)       287.6 (EOL)
     Mass in air [kg/m]		        47.68(SOL)       97.13 (EOL)
     Weight in sea water [N/m]	        439.4(SOL)        NA (EOL)
 
@@ -158,7 +158,7 @@ directory, Run **dataSum_static.py** to summarise all the data file used for vis
 double click **CABLEX.exe**, you will be able to see the knowledge and data base based on the LS2 & DS2
 
 5. **SPECIFY PASS CASE**: Click **export pass case** button at CABLEX UI and saved it to the directory for LS3 simulations, make sure the file name is **allpass.txt**, 
-a screenshot of the pass cases is shown as follows,
+a screenshot of the pass cases is shown as follows, the **Passed** Configuration is based on different offset results known as a multi-filtering process.
 
 .. image:: _static/passcaseLS2.jpg
    :alt: passcaseLS2
@@ -166,5 +166,89 @@ a screenshot of the pass cases is shown as follows,
    :height: 330px
    :align: center
 
-The refined Configuration is based on different offset results which a refined pass case. 
-Ready to pass to LS3 now.
+
+Ready to pass the configuration to LS3 now.
+
+Loading Space 3
+---------------
+
+The aim of LS3 is to find out the more refined green zone for lazywave configurations design with offsets(N/F/C) and currents, the offsets is set as 30% of water depth, 
+the current is set as 50-y return period current speed
+
+**Details of LS3**
+::
+
+    LazyWave
+    Static
+    Nominal  
+    Near/Far/Cross offsets
+    Current 
+
+For a lazywave shape at LS3, the following Design Space Parameters is considered,
+
+**Details of DS3**
+::
+
+    Pass cases from DS2 & LS2
+
+1. **BASE MODEL CREATION**: The Base model for LS3 & DS3 is identical with previous stage **LW_800mm_ESOL.yml**
+
+2. **MODEL ITERATION**: Download the **pc_conf_LS3.py** and achieve case iteration/multiply work 
+for Nominal Position with SOL/EOL Properties.
+
+.. code-block:: bash
+
+    python pc_conf_LS3.py
+
+3. **SIMULTAIONS & POST PROCESSING**: Put all case dat files in Orcaflex batch processing and make sure **post_calculation_CABLEX_LW.py** is in every
+directory, Run **dataSum_static.py** to summarise all the data file used for visualisation in CABLEX UI, you will get eight seperate files with all data,
+
+::
+
+    Nominal_SOL_LS3.txt
+    Nominal_EOL_LS3.txt
+    Near_SOL_LS3.txt
+    Near_EOL_LS3.txt
+    Far_SOL_LS3.txt
+    Far_EOL_LS3.txt
+    Cross_SOL_LS3.txt
+    Cross_EOL_LS3.txt
+
+4. **VISUALISATION**: Transfer the results file from LS3 to the **CABLEX.exe** located directory, ususally the data is saved under the following path for the show case
+double click **CABLEX.exe**, you will be able to see the knowledge and data base based on the LS3 & DS3
+
+5. **SPECIFY PASS CASE**: Click **export pass case** button at CABLEX UI and saved it to the directory for LS3 simulations, make sure the file name is **allpass.txt**, 
+a screenshot of the pass cases is shown as follows, the **Passed** Configuration is based on different offset and current results. Only the configuration withstand all the 
+offset and current can diliver to the next stage.
+
+6. **NOTES**: Since LS4 is making a RPW cable configuration based on the LS3 pass results, therefore only very few configuration can be passed to the next stage, those cases 
+are selected based on the **fitness factor** (calculated based on curvature, tension, buoy length, total length, hog clear etc). As a show case, only the best configuration considered
+to pass to the next step:
+::
+
+    Layback: 140m; TotalLength: 180m; Buoy: 15(10.6 uplift); Buoy_CC: 5m; 1st Buoy: 3m
+
+
+Loading Space 4
+---------------
+
+The aim of LS4 is to switch from a Lazywave configuraiton to real design RPW cable configuration (Reverse-Plaint Wave configuraiton) with the introduction of 
+**Tether Clamp & Lower Catenary**, the current and offsets is also introduced in the process, offsets is set as 30% of water depth, while the current refers
+as 50-y return period current speed
+
+**Details of LS4**
+::
+
+    Reverse-Plaint Wave
+    Static
+    Nominal  
+    Near/Far/Cross offsets
+    Current 
+
+For a RPW, the following Design Space Parameters is considered,
+
+**Details of DS3**
+::
+
+    Pass cases from DS2 & LS2
+
