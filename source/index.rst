@@ -7,7 +7,7 @@ Welcome to CABLEX's documentation!
 ==================================
 .. only:: html
 
-   :Version: v1.2.0
+   :Version: v1.3.0
    :Date: |today|
    :Author: Yang Zhou 
 
